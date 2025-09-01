@@ -26,7 +26,7 @@ public class UserController {
         return new ResponseEntity<>("Username already exists", HttpStatus.CONFLICT);
       }
       users.put(user.getUsername(), user);
-      return new ResponseEntity<>("User registered successfully", HttpStatus.CREATED);
+      return new ResponseEntity<>("User registered successfully", HttpStatus.OK);
     }
 
     //GET to list all the users
